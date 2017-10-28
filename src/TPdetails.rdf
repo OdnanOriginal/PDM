@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:Tpb="http://www.TP_Example.org/TPB"
+	xmlns:ppo="http://vocab.deri.ie/ppo#"
+	xmlns:PPIoT="http://pdm-aids.unige.dibris.it/PPIoT#"
+	xml:base="http://pdm-aids.unige.dibris.it/PPIoT#">
+
+
+  <PPIoT:Statement rdf:about="http://www.example.org#Statement_B">
+	<PPIoT:RequestAccess rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Datasets#activity</PPIoT:RequestAccess>
+	<ppo:hasCondition>
+			<ppo:Condition rdf:about="http://www.example.org#Cond_1">
+				<ppo:hasLogicalOperator rdf:resource="http://vocab.deri.ie/ppo#And"></ppo:hasLogicalOperator>
+				<PPIoT:hasReason rdf:resource="#fitness"></PPIoT:hasReason>
+				<PPIoT:hasMethod rdf:resource="#encrypted"></PPIoT:hasMethod>
+				<PPIoT:hasMaxRetentionPeriod rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">24</PPIoT:hasMaxRetentionPeriod>
+				<PPIoT:allowsNegotiation rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</PPIoT:allowsNegotiation>
+ 			 	<ppo:hasChildCondition>
+					<ppo:Condition rdf:about="http://www.example.org#ChildCond_1">
+						<PPIoT:hasPersistence rdf:resource="#continuous"></PPIoT:hasPersistence>
+						<PPIoT:allowsNegotiation rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</PPIoT:allowsNegotiation>
+					</ppo:Condition>
+				</ppo:hasChildCondition>			
+			</ppo:Condition>		  
+	</ppo:hasCondition>
+	<ppo:hasAccess> acl:Read </ppo:hasAccess>
+   </PPIoT:Statement>
+ 
+</rdf:RDF>
