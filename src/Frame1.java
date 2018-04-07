@@ -61,7 +61,7 @@ public class Frame1 {
 		lblNewLabel.setBounds(10, 11, 246, 35);
 		frame.getContentPane().add(lblNewLabel);
 		
-		lblNewLabel_1 = new JLabel("\n\t Allow TP with "+requestData+" = "+value+" for dataset#" + dataset);
+		lblNewLabel_1 = new JLabel("\n\t Allow TP with "+requestData+" = "+value+" for #" + dataset);
 		lblNewLabel_1.setFont(new Font("Tahoma", Font.PLAIN, 11));
 		lblNewLabel_1.setBounds(20, 38, 362, 23);
 		frame.getContentPane().add(lblNewLabel_1);
@@ -71,7 +71,7 @@ public class Frame1 {
 		label_1.setBounds(44, 57, 362, 23);
 		frame.getContentPane().add(label_1);
 		
-		label_2 = new JLabel(" Dataset at Risk: Dataset#Sleep risk value<45%  ");
+		label_2 = new JLabel(" Dataset at Risk: #sleep risk value<45%  ");
 		label_2.setFont(new Font("Tahoma", Font.PLAIN, 11));
 		label_2.setBounds(44, 75, 362, 23);
 		frame.getContentPane().add(label_2);

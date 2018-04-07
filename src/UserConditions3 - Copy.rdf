@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<rdf:RDF
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:ppiot="http://pdm-aids.unige.dibris.it/ppiot#"
+	xmlns:ppo="http://vocab.deri.ie/ppo#"
+	xmlns:wo="http://smiy.sourceforge.net/wo/spec/weightingontology.html#Weight#"
+	xml:base="http://pdm-aids.unige.dibris.it/ppiot#">
+
+	<ppo:PrivacyPreference rdf:about="http://vocab.deri.ie/ppo#userCond1">		
+		<ppo:appliesToDataset rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Datasets#activity</ppo:appliesToDataset> 
+		<ppo:hasCondition>
+			<ppo:Condition rdf:about="http://vocab.deri.ie/ppo#condition1">
+				<ppo:hasLogicalOperator rdf:resource="http://vocab.deri.ie/ppo#And"></ppo:hasLogicalOperator>
+				<ppiot:hasPersistence rdf:resource="#once"></ppiot:hasPersistence>				
+				<ppiot:hasMaxRetentionPeriod rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">24</ppiot:hasMaxRetentionPeriod>
+				<ppiot:allowsNegotiation rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ppiot:allowsNegotiation>
+ 			 	<ppo:hasChildCondition>
+					<ppo:Condition rdf:about="http://vocab.deri.ie/ppo#userChildCond1">						
+						<ppiot:hasReason rdf:resource="#fitness"></ppiot:hasReason>
+						<ppiot:hasMethod rdf:resource="#encrypted"></ppiot:hasMethod>
+						<ppo:hasLogicalOperator rdf:resource="http://vocab.deri.ie/ppo#And"></ppo:hasLogicalOperator>
+						<ppiot:allowsNegotiation rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ppiot:allowsNegotiation>
+					</ppo:Condition>
+				</ppo:hasChildCondition>				
+			</ppo:Condition>			  
+		</ppo:hasCondition>
+		<ppo:hasAccess> acl:Read </ppo:hasAccess>
+		<ppo:hasAccess> acl:Write </ppo:hasAccess>
+		<ppo:hasPriority rdf:resource="http://smiy.sourceforge.net/wo/spec/weightingontology.html#Weight#1"></ppo:hasPriority>
+		<ppiot:isVisible rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ppiot:isVisible>	
+	</ppo:PrivacyPreference>
+</rdf:RDF>

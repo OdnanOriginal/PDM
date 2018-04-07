@@ -31,13 +31,21 @@ import org.apache.jena.rdf.model.ModelFactory;
 
 
 public class PersonalDataManager {
-//	private static final String ontologyURL = "http://localhost:3030/PPIoT/";
-//	private static final String UserConditions = "http://localhost:3030/UserConditions/";
-	private static final String UserConditions = "D:/work/workspace/PDM/src/UserConditions.rdf";	
-	private static final String ontologyURL = "D:/work/workspace/PDM/src/PPIoT.owl";
+	
+	
+	// PPIoT ONTOLOGY is ONLINE
+	private static final String ontologyURL = "http://pdm-aids.dibris.unige.it/PPIoT";
+//	private static final String ontologyURL = "D:/work/workspace/PDM/src/PPIoT.owl";
+	
+	// Jena server is used for the user (in this example, locally, the file is also in UnserConditionsFinal.rdf)
+	private static final String UserConditions = "http://localhost:3030/UserConditions/";
+//	private static final String UserConditions = "D:/work/workspace/PDM/src/UserConditionsFinal.rdf";
+	
+	//TP STATEMENT FROM THIRD PARTIES
+	private static final String TPStatements = "D:/work/workspace/PDM/src/TPdetails2.rdf";
 	
 	private static final String ontologyNS = "http://pdm-aids.unige.dibris.it/PPIoT#";
-	private static final String TPStatements = "D:/work/workspace/PDM/src/TPdetails.rdf";
+	
 
 
 	private static final int MIN = 0;
