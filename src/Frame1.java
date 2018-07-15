@@ -102,14 +102,14 @@ public class Frame1 {
 		lblNewLabel_2.setBounds(30, 294, 139, 14);
 		frame.getContentPane().add(lblNewLabel_2);
 		
-		lblNewLabel_3 = new JLabel("<html>Access your Data: <i>Continuous</i> </html>");
+		lblNewLabel_3 = new JLabel("<html>Access your Data: <i>Continuously</i> </html>");
 		lblNewLabel_3.setFont(new Font("Tahoma", Font.PLAIN, 11));
-		lblNewLabel_3.setBounds(30, 188, 152, 23);
+		lblNewLabel_3.setBounds(30, 188, 162, 23);
 		frame.getContentPane().add(lblNewLabel_3);
 		
-		lblNewLabel_5 = new JLabel("Reason:");
+		lblNewLabel_5 = new JLabel("Reason of PDM recommendation:");
 		lblNewLabel_5.setForeground(Color.GRAY);
-		lblNewLabel_5.setBounds(30, 240, 89, 14);
+		lblNewLabel_5.setBounds(30, 240, 178, 14);
 		lblNewLabel_5.setFont(new Font("Tahoma", Font.PLAIN, 11));
 		frame.getContentPane().add(lblNewLabel_5);
 		
@@ -138,17 +138,17 @@ public class Frame1 {
 		label_4.setBounds(30, 64, 76, 23);
 		frame.getContentPane().add(label_4);
 		
-		label_5 = new JLabel("<html>Your current preference for accessing your <i>Activity</i> data:</html>");
+		label_5 = new JLabel("<html>Your current preference for accessing your <i>ACTIVITY</i> data:</html>");
 		label_5.setFont(new Font("Tahoma", Font.PLAIN, 11));
 		label_5.setBounds(30, 84, 296, 23);
 		frame.getContentPane().add(label_5);
 		
-		label_6 = new JLabel(" -Access your data: once (separate permission for each workout)");
+		label_6 = new JLabel("<html>&bull; Access your data: once (separate permission for each workout)</html>");
 		label_6.setFont(new Font("Tahoma", Font.PLAIN, 11));
-		label_6.setBounds(30, 103, 312, 23);
+		label_6.setBounds(30, 103, 321, 23);
 		frame.getContentPane().add(label_6);
 		
-		label_7 = new JLabel(" -Availability to modify access upon confirmation: Yes");
+		label_7 = new JLabel("<html>&bull; Availability to modify access upon confirmation: Yes</html>");
 		label_7.setFont(new Font("Tahoma", Font.PLAIN, 11));
 		label_7.setBounds(30, 123, 312, 23);
 		frame.getContentPane().add(label_7);

@@ -27,6 +27,7 @@
 		<ppo:hasAccess> acl:Read </ppo:hasAccess>
 		<ppo:hasAccess> acl:Write </ppo:hasAccess>
 		<ppo:hasPriority rdf:resource="http://smiy.sourceforge.net/wo/spec/weightingontology.html#Weight#1"></ppo:hasPriority>
+		<ppiot:allowsSharingWith rdf:resource="#socialNetworkFriends"></ppiot:allowsSharingWith>
 		<ppiot:isVisible rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ppiot:isVisible>	
 	</ppo:PrivacyPreference>
 </rdf:RDF>
